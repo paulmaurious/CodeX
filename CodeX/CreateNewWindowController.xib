@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16A270f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CreateNewWindowController" customModule="CodeX" customModuleProvider="target">
+            <connections>
+                <outlet property="bgColorWell" destination="tcA-S9-x3L" id="a1m-2u-u3g"/>
+                <outlet property="birthdayTxt" destination="51g-5n-NMq" id="3FJ-2B-tOm"/>
+                <outlet property="callerNumber" destination="sEl-3h-Wgz" id="x6H-3w-0SC"/>
+                <outlet property="cityTxt" destination="Tsm-WI-gfe" id="ozY-Ed-OcN"/>
+                <outlet property="countryTxt" destination="wr5-tc-5Um" id="890-mM-6wD"/>
+                <outlet property="createNewWindow" destination="F0z-JX-Cv5" id="1QD-Ym-8un"/>
+                <outlet property="dismissCreateNewBtn" destination="fIq-6f-NPQ" id="cUj-Jw-NIt"/>
+                <outlet property="dismissWindowBtn" destination="Hj3-4o-8iM" id="ugN-dN-7uW"/>
+                <outlet property="dontKnowLatLongBtn" destination="sBG-Ge-VM3" id="z6Z-L0-elK"/>
+                <outlet property="editBtn" destination="88C-tK-fp6" id="lPe-Fb-ayh"/>
+                <outlet property="emailBtn" destination="IB2-nd-KMp" id="BuS-II-cXt"/>
+                <outlet property="emailCancel" destination="Iaq-NR-LkE" id="yTB-wz-Yh5"/>
+                <outlet property="emailMessage" destination="Wy5-qk-2Dw" id="ibm-vf-PQm"/>
+                <outlet property="emailOK" destination="4LE-zi-tBP" id="mxe-ce-dGj"/>
+                <outlet property="emailSubject" destination="T0A-dq-9IS" id="aKF-f1-IZb"/>
+                <outlet property="emailTxt" destination="GbO-Ec-92K" id="FVC-CE-j0q"/>
+                <outlet property="encodingCombo" destination="iE1-O0-JEf" id="Z3b-Zy-cLr"/>
+                <outlet property="errorCombo" destination="bjJ-Lf-C7S" id="aI2-fH-OVe"/>
+                <outlet property="eventCancel" destination="tS8-CZ-eJ9" id="VUl-gd-Yb3"/>
+                <outlet property="eventDescTxt" destination="GdJ-Vh-VO2" id="SHu-gM-rlx"/>
+                <outlet property="eventEndDate" destination="cWw-Oz-55m" id="9Pv-TV-w1X"/>
+                <outlet property="eventEndDateLbl" destination="Zuq-Z0-ILk" id="kDB-2K-RLF"/>
+                <outlet property="eventHasEndDateBtn" destination="MeM-Ov-4Qq" id="0q7-mh-tld"/>
+                <outlet property="eventLocTxt" destination="32v-mD-MMp" id="2jh-IK-z2X"/>
+                <outlet property="eventNameTxt" destination="vkQ-3O-c22" id="ldO-rU-fpu"/>
+                <outlet property="eventOK" destination="xi1-wa-QJJ" id="Vaf-x7-M1o"/>
+                <outlet property="eventStartDate" destination="d5M-q8-3gX" id="0Lj-bG-hoE"/>
+                <outlet property="exportBtn" destination="tkb-PQ-KIl" id="Lp4-kQ-Se6"/>
+                <outlet property="faxTxt" destination="FHB-rO-mpa" id="YqT-ew-jLw"/>
+                <outlet property="fbBtn" destination="tmH-Hy-Wbq" id="r75-2t-8YU"/>
+                <outlet property="fbCancel" destination="n85-q1-SCn" id="bCH-iK-YHS"/>
+                <outlet property="fbOK" destination="87X-BB-wD6" id="y3c-7K-a8F"/>
+                <outlet property="fbProfileName" destination="lRy-QV-GOb" id="dIy-jk-cyi"/>
+                <outlet property="fbWindow" destination="Buh-zA-f19" id="GQD-dY-bJr"/>
+                <outlet property="fgColorWell" destination="Jhx-dC-MNo" id="WwO-0s-9Gf"/>
+                <outlet property="fileTypeCombo" destination="F0A-Ay-jt5" id="Trr-dQ-Oft"/>
+                <outlet property="fnameTxt" destination="IgT-bS-bXR" id="Ks6-Qd-Mz8"/>
+                <outlet property="generateBtn" destination="FN6-Px-GGw" id="txg-pG-WYq"/>
+                <outlet property="goBackBtn" destination="TJy-Qk-WJR" id="OAv-rN-Tf1"/>
+                <outlet property="heightTxt" destination="cPw-gX-t2f" id="UjK-Wz-PfK"/>
+                <outlet property="homePhoneTxt" destination="Fw8-gM-fKs" id="K3s-sT-kfC"/>
+                <outlet property="jobTitleTxt" destination="kOJ-wl-8pw" id="Lf8-in-dxi"/>
+                <outlet property="latitudeTxt" destination="qTE-ce-vDP" id="J1u-Hs-nX6"/>
+                <outlet property="linkedinBtn" destination="ys9-fD-pyM" id="PqR-LS-7kN"/>
+                <outlet property="linkedinCancel" destination="pUh-Et-hFm" id="3PS-pc-dbI"/>
+                <outlet property="linkedinOK" destination="zh7-Kb-gMg" id="bWK-um-BhN"/>
+                <outlet property="linkedinProfileName" destination="N41-dB-IUk" id="aEZ-Kf-20w"/>
+                <outlet property="linkedinWindow" destination="q8S-wB-p1c" id="GhA-hE-fjC"/>
+                <outlet property="lnameTxt" destination="AeI-hg-cqk" id="xmb-wn-xB8"/>
+                <outlet property="locationAddrTxt" destination="Hac-8k-6ke" id="miW-7l-sk8"/>
+                <outlet property="locationBtn" destination="JbH-vd-FC8" id="oVU-U5-T0Y"/>
+                <outlet property="locationCancel" destination="iUa-bJ-IX9" id="Yij-RO-Hgp"/>
+                <outlet property="locationOK" destination="7Pi-bV-n3q" id="bKs-dp-Chy"/>
+                <outlet property="locationWindow" destination="w7z-bA-Uu1" id="EP9-Xa-l2d"/>
+                <outlet property="longitudeTxt" destination="aHy-8o-jyn" id="RcP-k0-Oaa"/>
+                <outlet property="mobileTxt" destination="0oo-hi-q2R" id="ncD-yg-Sie"/>
+                <outlet property="networkTypeCombo" destination="qNE-8X-Zt4" id="S9U-9g-Gwv"/>
+                <outlet property="orgTxt" destination="5Pf-dy-GuA" id="7AL-o6-WIn"/>
+                <outlet property="phoneCallBtn" destination="TZS-EN-PAI" id="CW5-tJ-BSD"/>
+                <outlet property="phoneCallCancel" destination="bO1-ho-uIH" id="7Ma-i0-6oE"/>
+                <outlet property="phoneCallOK" destination="qiB-2D-BQT" id="d6S-4t-El4"/>
+                <outlet property="phoneCallWindow" destination="kax-bV-IEB" id="2S6-7x-uF5"/>
+                <outlet property="postalCodeTxt" destination="Hhw-rv-K9P" id="rpR-Fx-OHx"/>
+                <outlet property="qrCodeImageView" destination="TqV-rQ-Hwt" id="F6a-dX-DZV"/>
+                <outlet property="rawCancel" destination="jtc-05-Mxd" id="ao5-IU-mW4"/>
+                <outlet property="rawDataBtn" destination="KmA-M4-Q6h" id="ePj-xL-G9v"/>
+                <outlet property="rawDataTxt" destination="Ecf-A9-rCX" id="VJ8-6M-oOO"/>
+                <outlet property="rawDataWindow" destination="XE0-mh-Bgl" id="8oL-84-ZeN"/>
+                <outlet property="rawOK" destination="tRM-lS-TGY" id="IBC-WC-xED"/>
+                <outlet property="recipientEmail" destination="1RR-Pg-Qoj" id="ZF3-2s-fpU"/>
+                <outlet property="recipientNumber" destination="7cb-8X-iI0" id="ExP-VP-AUQ"/>
+                <outlet property="reslnCombo" destination="2z5-Mw-VNA" id="0zr-Az-zdQ"/>
+                <outlet property="saveOptionsPanel" destination="JhJ-WZ-b5A" id="7oF-Sb-NqA"/>
+                <outlet property="sendEmailWindow" destination="dW0-n2-peb" id="wvr-tx-uQA"/>
+                <outlet property="smsBtn" destination="aoj-pO-Uon" id="kBA-EY-j8g"/>
+                <outlet property="smsCancel" destination="pax-bt-oOi" id="EWR-KY-yqK"/>
+                <outlet property="smsMessage" destination="a7M-Hz-Hty" id="IDi-Dl-pgR"/>
+                <outlet property="smsOK" destination="Whj-j8-j11" id="D31-J3-aPu"/>
+                <outlet property="smsWindow" destination="tm5-rP-Wlo" id="orY-h8-j9g"/>
+                <outlet property="ssidTxt" destination="Zkl-ue-u1H" id="ZOs-Ue-RDA"/>
+                <outlet property="stateTxt" destination="rjk-fG-Ppr" id="BMP-fq-eRC"/>
+                <outlet property="streetTxt" destination="NbI-m0-QUs" id="I81-HB-HaK"/>
+                <outlet property="templateWindow" destination="y39-MT-xEK" id="04E-Eg-Yfg"/>
+                <outlet property="transparencyCombo" destination="nS7-9n-04D" id="FvU-Dr-F7l"/>
+                <outlet property="twitterBtn" destination="u64-4e-4jh" id="oN5-ER-X2M"/>
+                <outlet property="twitterCancel" destination="dwy-kt-BfC" id="6ND-LJ-rTB"/>
+                <outlet property="twitterOK" destination="L2X-3w-i9T" id="QnL-nn-Yjq"/>
+                <outlet property="twitterProfileName" destination="EEX-zQ-hzM" id="rpm-E3-hGo"/>
+                <outlet property="twitterWindow" destination="GjQ-sb-Qzq" id="Dg2-e5-zwW"/>
+                <outlet property="unitCombo" destination="j6W-wu-HWg" id="MMg-JP-ZTY"/>
+                <outlet property="urlBtn" destination="pFs-9O-ET8" id="iC8-pi-XxD"/>
+                <outlet property="urlCancel" destination="ePo-nM-ht4" id="Zpl-nm-qsC"/>
+                <outlet property="urlOK" destination="KMv-En-hei" id="zbx-yr-be7"/>
+                <outlet property="urlTxt" destination="h0g-uc-Atk" id="D5W-KH-XrQ"/>
+                <outlet property="urlWindow" destination="AgT-HD-uiX" id="oo0-CU-wN8"/>
+                <outlet property="vCardWindow" destination="V3O-33-qnr" id="lhw-jy-wpb"/>
+                <outlet property="vEventWindow" destination="KwO-nq-Bzl" id="wqO-JP-u29"/>
+                <outlet property="vcardBtn" destination="akV-my-zR9" id="m56-s9-NO2"/>
+                <outlet property="vcardCancel" destination="3IV-23-zRc" id="ct8-6s-Ict"/>
+                <outlet property="vcardOK" destination="RWr-xF-FYz" id="o9c-SY-bSB"/>
+                <outlet property="veventBtn" destination="UiW-x8-WNv" id="V2l-2I-6no"/>
+                <outlet property="webAddress" destination="FZ5-cY-TeO" id="04k-zM-Dff"/>
+                <outlet property="widthTxt" destination="jiV-rg-dMV" id="3WB-U7-icD"/>
+                <outlet property="wifiBtn" destination="FjS-53-RsR" id="hFD-l7-bwp"/>
+                <outlet property="wifiCancel" destination="1RH-Ub-Svp" id="mTw-xz-Png"/>
+                <outlet property="wifiOK" destination="3NA-8c-OQW" id="fho-pO-T68"/>
+                <outlet property="wifiPasswdTxt" destination="gor-ha-Qx3" id="mMs-lc-L3I"/>
+                <outlet property="wifiWindow" destination="bLa-kC-Lly" id="A2L-GH-4OU"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="RK0-zW-vG5"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" animationBehavior="default" id="F0z-JX-Cv5" userLabel="CreateNewWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES"/>
+            <rect key="contentRect" x="196" y="240" width="800" height="720"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="720"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N7W-E4-fRj">
+                        <rect key="frame" x="380" y="679" width="41" height="41"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="TBAR" id="vDa-gi-2x4"/>
+                    </imageView>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="jUA-N8-PG9">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="671"/>
+                        <view key="contentView" ambiguous="YES" id="orS-05-f8x">
+                            <rect key="frame" x="0.0" y="0.0" width="800" height="671"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <box fixedFrame="YES" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="3Mo-aK-PXM">
+                                    <rect key="frame" x="17" y="16" width="766" height="303"/>
+                                    <view key="contentView" ambiguous="YES" id="Gj4-Ww-x55">
+                                        <rect key="frame" x="0.0" y="0.0" width="766" height="303"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mS2-1m-hgN">
+                                                <rect key="frame" x="367" y="261" width="77" height="27"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="OPTIONS" id="AWt-BV-QcH">
+                                                    <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.78823529410000004" green="0.1215686275" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1PV-6b-G2h">
+                                                <rect key="frame" x="319" y="253" width="42" height="42"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="OPT" id="jGa-eF-Q6i"/>
+                                            </imageView>
+                                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NX7-av-cfy">
+                                                <rect key="frame" x="20" y="203" width="42" height="42"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="UNIT" id="yNb-rF-f0k"/>
+                                            </imageView>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Elz-iS-PUE">
+                                                <rect key="frame" x="68" y="212" width="37" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="UNIT" id="fqC-zO-zjt">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.46274509800000002" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2LW-ss-l08">
+                                                <rect key="frame" x="68" y="162" width="51" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="WIDTH" id="Wsa-fm-PmJ">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.30196078430000001" green="0.56078431370000004" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wkB-bp-otA">
+                                                <rect key="frame" x="68" y="112" width="56" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="HEIGHT" id="K46-10-49l">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.098039215690000001" green="0.70980392160000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EHL-MD-fcV">
+                                                <rect key="frame" x="20" y="153" width="42" height="42"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="WTH" id="ZUP-dU-YBd"/>
+                                            </imageView>
+                                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVx-ff-Yk1">
+                                                <rect key="frame" x="20" y="103" width="42" height="42"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="HGT" id="GEN-ug-Odz"/>
+                                            </imageView>
+                                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2z5-Mw-VNA">
+                                                <rect key="frame" x="190" y="59" width="151" height="28"/>
+                                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" alignment="center" placeholderString="RESOLUTION" drawsBackground="YES" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="CN3-EN-6sJ">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <objectValues>
+                                                        <string>72 DPI (BMP)</string>
+                                                    </objectValues>
+                                                </comboBoxCell>
+                                            </comboBox>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zqz-7J-jj2">
+                                                <rect key="frame" x="68" y="62" width="93" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="RESOLUTION" id="FpD-V2-ybi">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GRx-Km-1OC">
+                                                <rect key="frame" x="20" y="53" width="42" height="42"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="RES" id="8Gj-2j-X48"/>
+                                            </imageView>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiV-rg-dMV">
+                                                <rect key="frame" x="190" y="162" width="148" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="WIDTH" drawsBackground="YES" id="MqS-J6-zaQ">
+                                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="wP6-N4-oOl"/>
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.30196078430000001" green="0.56078431370000004" blue="0.67450980390000004" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPw-gX-t2f">
+                                                <rect key="frame" x="190" y="112" width="148" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="HEIGHT" drawsBackground="YES" id="cSI-hy-kel">
+                                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="cLj-jT-oEk"/>
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.098039215690000001" green="0.70980392160000005" blue="0.99607843139999996" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjJ-Lf-C7S">
+                                                <rect key="frame" x="582" y="209" width="187" height="28"/>
+                                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" alignment="center" placeholderString="ERROR CORRECTION" drawsBackground="YES" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="y14-P0-mLK">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.45882352939999999" green="0.49019607840000001" blue="0.45882352939999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <objectValues>
+                                                        <string>LOW</string>
+                                                        <string>MEDIUM</string>
+                                                        <string>QUARTILE</string>
+                                                        <string>HIGH</string>
+                                                    </objectValues>
+                                                </comboBoxCell>
+                                            </comboBox>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-Xh-4hs">
+                                                <rect key="frame" x="429" y="212" width="147" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ERROR CORRECTION" id="ar4-yU-fIc">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.45882352939999999" green="0.49019607840000001" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YN2-Bm-r9m">
+                                                <rect key="frame" x="381" y="203" width="42" height="42"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="ERROR" id="0SX-RC-k1t"/>
+                                            </imageView>
+                                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9M-sU-QgC">
+                                                <rect key="frame" x="381" y="153" width="42" height="42"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="ENC" id="0Us-vQ-0Pc"/>
+                                            </imageView>
+                                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iE1-O0-JEf">
+                                                <rect key="frame" x="582" y="159" width="187" height="28"/>
+                                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" alignment="center" placeholderString="ENCODING FORMAT" drawsBackground="YES" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="toE-Ep-sye">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.42352941179999998" green="0.47843137250000001" blue="0.53725490200000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <objectValues>
+                                                        <string>UTF - 8</string>
+                                                        <string>LATIN - 1 (WESTERN EUROPE)</string>
+                                                    </objectValues>
+                                                </comboBoxCell>
+                                            </comboBox>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo3-pE-0Vk">
+                                                <rect key="frame" x="429" y="162" width="147" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ENCODING FORMAT" id="nM2-L2-SGc">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.42352941179999998" green="0.47843137250000001" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZ1-bb-gQz">
+                                                <rect key="frame" x="381" y="103" width="42" height="42"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="COLOR" id="foZ-CL-Wdq"/>
+                                            </imageView>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7bo-0G-TNl">
+                                                <rect key="frame" x="429" y="112" width="209" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="COLORS AND TRANSPARENCY" id="qdQ-Bj-6PQ">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.79215686269999996" green="0.41176470590000003" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAn-Wm-enn">
+                                                <rect key="frame" x="502" y="80" width="159" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BACKGROUND COLOR" id="TEv-gL-Knb">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.79215686269999996" green="0.41176470590000003" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcA-S9-x3L">
+                                                <rect key="frame" x="667" y="80" width="99" height="24"/>
+                                                <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </colorWell>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gz-ai-gbx">
+                                                <rect key="frame" x="502" y="48" width="159" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="FOREGROUND COLOR" id="ySM-YP-dNX">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.79215686269999996" green="0.41176470590000003" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="11d-iM-qvf">
+                                                <rect key="frame" x="453" y="16" width="208" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TRANSPARENT BACKGROUND" id="HGw-rq-SQG">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="0.79215686269999996" green="0.41176470590000003" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jhx-dC-MNo">
+                                                <rect key="frame" x="667" y="48" width="99" height="24"/>
+                                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </colorWell>
+                                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nS7-9n-04D">
+                                                <rect key="frame" x="667" y="12" width="102" height="28"/>
+                                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" alignment="center" placeholderString="YES OR NO" drawsBackground="YES" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="2d4-Jd-ex0">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.79215686269999996" green="0.41176470590000003" blue="0.14117647059999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <objectValues>
+                                                        <string>YES</string>
+                                                        <string>NO</string>
+                                                    </objectValues>
+                                                </comboBoxCell>
+                                            </comboBox>
+                                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j6W-wu-HWg">
+                                                <rect key="frame" x="190" y="209" width="151" height="28"/>
+                                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" alignment="center" placeholderString="UNIT" drawsBackground="YES" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="1jD-Ia-Vsv">
+                                                    <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.46274509800000002" green="0.20784313730000001" blue="0.40784313729999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <objectValues>
+                                                        <string>MILLIMETER(MM)</string>
+                                                        <string>INCH(IN)</string>
+                                                        <string>POINTS(PT)</string>
+                                                    </objectValues>
+                                                </comboBoxCell>
+                                            </comboBox>
+                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TJy-Qk-WJR">
+                                                <rect key="frame" x="97" y="0.0" width="140" height="48"/>
+                                                <buttonCell key="cell" type="square" title="GO BACK" bezelStyle="shadowlessSquare" image="GOBACK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="HPO-5c-pdd">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="goBackToTemplates:" target="-2" id="z9N-y1-k4E"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </box>
+                                <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR8-LX-Weg">
+                                    <rect key="frame" x="272" y="380" width="256" height="255"/>
+                                    <clipView key="contentView" ambiguous="YES" copiesOnScroll="NO" id="V4S-UY-KHa">
+                                        <rect key="frame" x="1" y="1" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-rQ-Hwt">
+                                                <rect key="frame" x="0.0" y="-253" width="256" height="255"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="P4D-eQ-Vrd"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </clipView>
+                                    <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="e9c-V0-vUH">
+                                        <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="gJX-2Q-vcj">
+                                        <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                </scrollView>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tkb-PQ-KIl">
+                                    <rect key="frame" x="560" y="513" width="210" height="48"/>
+                                    <buttonCell key="cell" type="square" title="EXPORT AS IMAGE" bezelStyle="shadowlessSquare" image="EXPORT" imagePosition="left" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" inset="2" id="vIT-9T-H4O">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="exportQRCodeAsImg:" target="-2" id="3a8-y5-wVF"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="88C-tK-fp6">
+                                    <rect key="frame" x="580" y="455" width="170" height="48"/>
+                                    <buttonCell key="cell" type="square" title="EDIT DETAILS" bezelStyle="shadowlessSquare" image="EDIT" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="aBB-6u-tbZ">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="editDetails:" target="-2" id="Ykq-8D-QP3"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIq-6f-NPQ">
+                                    <rect key="frame" x="75" y="455" width="130" height="48"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="right" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="i2c-FS-lYn">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissWorkWindow:" target="-2" id="n0D-uJ-yTo"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FN6-Px-GGw">
+                                    <rect key="frame" x="20" y="513" width="240" height="48"/>
+                                    <buttonCell key="cell" type="square" title="GENEARATE QR CODE" bezelStyle="shadowlessSquare" image="GEN" imagePosition="right" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="5kT-wl-NMc">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="generateQRCodeImage:" target="-2" id="uuL-AS-Tfp"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="y39-MT-xEK" userLabel="TemplateWindow">
+            <windowStyleMask key="styleMask" texturedBackground="YES"/>
+            <rect key="contentRect" x="136" y="189" width="482" height="662"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="a7o-5v-8DD">
+                <rect key="frame" x="0.0" y="0.0" width="482" height="662"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7i-Cf-Kft">
+                        <rect key="frame" x="18" y="618" width="446" height="24"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="PICK ANYONE FROM THE FOLLOWING TEMPLATES TO CONTINUE" id="ohY-MI-p1Z">
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                            <color key="textColor" red="0.42352941179999998" green="0.47843137250000001" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-M4-Q6h">
+                        <rect key="frame" x="20" y="500" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="RAW DATA" bezelStyle="shadowlessSquare" image="RAW" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6cW-9A-35w">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showRawDataWindow:" target="-2" id="1ry-zn-tkO"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akV-my-zR9">
+                        <rect key="frame" x="199" y="500" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="VCARD" bezelStyle="shadowlessSquare" image="VCARD" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="PZU-Dd-5g5">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showvCardWindow:" target="-2" id="j7m-rD-6LW"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UiW-x8-WNv">
+                        <rect key="frame" x="377" y="500" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="EVENT" bezelStyle="shadowlessSquare" image="VEVENT" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="iYE-Yb-sT9">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showvEventWindow:" target="-2" id="FN4-lX-mUc"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmH-Hy-Wbq">
+                        <rect key="frame" x="20" y="380" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="FACEBOOK" bezelStyle="shadowlessSquare" image="FB" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dwc-hG-BLp">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showFBWindow:" target="-2" id="p6i-1M-VVx"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u64-4e-4jh">
+                        <rect key="frame" x="199" y="380" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="TWITTER" bezelStyle="shadowlessSquare" image="TWITTER" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="xwq-SV-HT2">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showTwitterWindow:" target="-2" id="yhP-VF-AmV"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ys9-fD-pyM">
+                        <rect key="frame" x="377" y="380" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="LINKEDIN" bezelStyle="shadowlessSquare" image="LINK" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dI6-Co-icm">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showLinkedinWindow:" target="-2" id="TVY-Lu-wGV"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZS-EN-PAI">
+                        <rect key="frame" x="21" y="260" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="CALL" bezelStyle="shadowlessSquare" image="PHONE" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="v72-au-ftp">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showPhoneCallWindow:" target="-2" id="iHs-lY-5vT"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aoj-pO-Uon">
+                        <rect key="frame" x="199" y="260" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="SMS" bezelStyle="shadowlessSquare" image="SMS" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hmA-ca-DMg">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showSMSWindow:" target="-2" id="jec-jf-Sam"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IB2-nd-KMp">
+                        <rect key="frame" x="377" y="260" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="EMAIL" bezelStyle="shadowlessSquare" image="EMAIL" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gny-zA-ZCo">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showEmailWindow:" target="-2" id="AA3-gS-bg9"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFs-9O-ET8">
+                        <rect key="frame" x="20" y="140" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="URL" bezelStyle="shadowlessSquare" image="WEB" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sIf-7E-mqY">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showURLWindow:" target="-2" id="t38-ow-bbu"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JbH-vd-FC8">
+                        <rect key="frame" x="198" y="140" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="LOCATION" bezelStyle="shadowlessSquare" image="MAP" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sRz-uw-89d">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showLocationWindow:" target="-2" id="5pk-SA-qPU"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FjS-53-RsR">
+                        <rect key="frame" x="376" y="140" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="WIFI" bezelStyle="shadowlessSquare" image="WIFI" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Yhb-fd-MgH">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showWifiWindow:" target="-2" id="Ryh-5B-Rxk"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hj3-4o-8iM">
+                        <rect key="frame" x="198" y="20" width="85" height="110"/>
+                        <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="CANCEL" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qi6-DV-f4U">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="dismissCreateNewWindow:" target="-2" id="q2N-14-Gq7"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="854" y="147"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="XE0-mh-Bgl" userLabel="RawDataWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES"/>
+            <rect key="contentRect" x="136" y="189" width="360" height="311"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="3oV-zb-yof">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="311"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="yef-RT-x3t">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="311"/>
+                        <view key="contentView" ambiguous="YES" id="YC6-vC-CqF">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="311"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-A9-rCX">
+                                    <rect key="frame" x="18" y="74" width="324" height="169"/>
+                                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="left" placeholderString="ENTER ANYTHING HERE" id="Hbw-dM-cda">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.82352941180000006" green="0.30196078430000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5v-Qb-13F">
+                                    <rect key="frame" x="137" y="264" width="87" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="RAW DATA" id="gqG-Go-PL9">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.82352941180000006" green="0.30196078430000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jtc-05-Mxd">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="sWR-aX-Nk0">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="15" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="DWy-sd-7aI"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRM-lS-TGY">
+                                    <rect key="frame" x="265" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="28V-5k-hQs">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromRawData:" target="-2" id="ZFM-dm-dyy"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="1476" y="-8.5"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="V3O-33-qnr" userLabel="vCardWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="432" height="418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="7KA-t3-cMW">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="418"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="U3V-x8-O3a">
+                        <rect key="frame" x="0.0" y="0.0" width="432" height="418"/>
+                        <view key="contentView" ambiguous="YES" id="GO8-wu-QHg">
+                            <rect key="frame" x="0.0" y="0.0" width="432" height="418"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3IV-23-zRc">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Ohw-hB-Qf1">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="2NZ-EM-CrN"/>
+                                    </connections>
+                                </button>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgu-ce-f7s">
+                                    <rect key="frame" x="122" y="371" width="188" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="vCARD/BUSINESS CARD" id="P7H-Ao-f8q">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgT-bS-bXR">
+                                    <rect key="frame" x="18" y="334" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="FIRST NAME" id="e0I-7c-J1d">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AeI-hg-cqk">
+                                    <rect key="frame" x="18" y="297" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="LAST NAME" id="glA-VP-4Ab">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Pf-dy-GuA">
+                                    <rect key="frame" x="18" y="260" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="ORGANIZATION" id="91r-Dr-EdW">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GbO-Ec-92K">
+                                    <rect key="frame" x="226" y="144" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="EMAIL" id="flr-bz-QdR">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tsm-WI-gfe">
+                                    <rect key="frame" x="18" y="107" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="CITY" id="L1p-O3-437">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rjk-fG-Ppr">
+                                    <rect key="frame" x="226" y="334" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="STATE/PROVINCE" id="utd-ZL-zol">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wr5-tc-5Um">
+                                    <rect key="frame" x="226" y="297" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="COUNTRY" id="iLx-4a-5y3">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fw8-gM-fKs">
+                                    <rect key="frame" x="226" y="260" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="HOME PHONE" id="pMP-Q1-eZ8">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0oo-hi-q2R">
+                                    <rect key="frame" x="226" y="223" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="MOBILE PHONE" id="qDl-QS-Efu">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NbI-m0-QUs">
+                                    <rect key="frame" x="18" y="186" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="STREET" id="FjC-DA-G8a">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhw-rv-K9P">
+                                    <rect key="frame" x="18" y="144" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="POSTAL CODE" id="JaR-4w-lzp">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kOJ-wl-8pw">
+                                    <rect key="frame" x="18" y="223" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="JOB TITLE" id="aqD-JZ-kdu">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51g-5n-NMq">
+                                    <rect key="frame" x="240" y="74" width="175" height="29"/>
+                                    <datePickerCell key="cell" alignment="left" drawsBackground="NO" id="wLE-Oo-gbl">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="-596007000">
+                                            <!--1982-02-11 18:30:00 +0000-->
+                                        </date>
+                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </datePickerCell>
+                                </datePicker>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vf-XD-ExD">
+                                    <rect key="frame" x="18" y="70" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="CHOOSE BIRTHDAY" id="Lsy-3X-hJR">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHB-rO-mpa">
+                                    <rect key="frame" x="226" y="186" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="FAX NUMBER" id="NOp-EH-KEA">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0g-uc-Atk">
+                                    <rect key="frame" x="226" y="107" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="URL" id="3wH-Yb-ESj">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1176470588" green="0.50980392159999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RWr-xF-FYz">
+                                    <rect key="frame" x="337" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="M2z-Sp-IcE">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromvCard:" target="-2" id="AsB-Un-wL8"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="1476" y="462"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="KwO-nq-Bzl" userLabel="vEventWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="432" height="418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="7a4-Bm-Trn">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="418"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="gHf-sq-PTr">
+                        <rect key="frame" x="0.0" y="0.0" width="432" height="418"/>
+                        <view key="contentView" ambiguous="YES" id="Vpl-5v-D4s">
+                            <rect key="frame" x="0.0" y="0.0" width="432" height="418"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xi1-wa-QJJ">
+                                    <rect key="frame" x="337" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="GhG-1V-yyE">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFormvEvent:" target="-2" id="atH-dc-9dT"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MeM-Ov-4Qq">
+                                    <rect key="frame" x="20" y="108" width="222" height="42"/>
+                                    <buttonCell key="cell" type="square" title="EVENT HAS END DATE" bezelStyle="shadowlessSquare" image="CHKUFILL" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="NSB-WX-mcr">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doesEventHaveEndDate:" target="-2" id="Dxd-VR-x1I"/>
+                                    </connections>
+                                </button>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3I8-Ff-f6l">
+                                    <rect key="frame" x="143" y="371" width="146" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CALENDAR EVENT" id="2bz-bJ-vPZ">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkQ-3O-c22">
+                                    <rect key="frame" x="18" y="334" width="396" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="EVENT NAME(REQUIRED)" id="Srz-aA-JhW">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32v-mD-MMp">
+                                    <rect key="frame" x="18" y="195" width="396" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="EVENT LOCATION" id="h2S-B3-Z9b">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GdJ-Vh-VO2">
+                                    <rect key="frame" x="18" y="232" width="396" height="94"/>
+                                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="EVENT DESCRIPTION" id="u81-D1-cOS">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5M-q8-3gX">
+                                    <rect key="frame" x="240" y="162" width="175" height="29"/>
+                                    <datePickerCell key="cell" alignment="left" drawsBackground="NO" id="hh6-2N-tR0">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="-596007000">
+                                            <!--1982-02-11 18:30:00 +0000-->
+                                        </date>
+                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES" second="YES"/>
+                                    </datePickerCell>
+                                </datePicker>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wj-fa-NxC">
+                                    <rect key="frame" x="18" y="158" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="EVENT START DATE/TIME" id="olm-6y-Ep2">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <datePicker hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-Oz-55m">
+                                    <rect key="frame" x="240" y="75" width="175" height="29"/>
+                                    <datePickerCell key="cell" alignment="left" drawsBackground="NO" id="S0k-WV-Mvs">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="-596007000">
+                                            <!--1982-02-11 18:30:00 +0000-->
+                                        </date>
+                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES" second="YES"/>
+                                    </datePickerCell>
+                                </datePicker>
+                                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zuq-Z0-ILk">
+                                    <rect key="frame" x="18" y="71" width="188" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="EVENT END DATE/TIME" id="C7k-cb-3Yq">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.070588235289999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tS8-CZ-eJ9">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qts-nk-1rp">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="aSb-au-QXf"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="2050" y="-8"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Buh-zA-f19" userLabel="FacebookWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="360" height="198"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="nCp-rV-YG6">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="HHl-Kd-I7Z">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                        <view key="contentView" ambiguous="YES" id="uON-xW-FYV">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n85-q1-SCn">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="3YG-Z9-n4K">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="W2m-lw-vCU"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87X-BB-wD6">
+                                    <rect key="frame" x="265" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="PJ7-pp-2Vk">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromFB:" target="-2" id="UTP-qn-Rn9"/>
+                                    </connections>
+                                </button>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csh-wD-LiM">
+                                    <rect key="frame" x="99" y="151" width="162" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="FACEBOOK PROFILE" id="G0R-my-ZYQ">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lRy-QV-GOb">
+                                    <rect key="frame" x="18" y="85" width="324" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="FACEBOOK PROFILE NAME" id="WQM-aC-9pU">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="2050" y="399"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="GjQ-sb-Qzq" userLabel="TwitterWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="360" height="198"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="zc2-so-T7l">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="OUM-Fv-BdI">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                        <view key="contentView" ambiguous="YES" id="4u9-Vw-jTn">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwy-kt-BfC">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="atQ-nR-U3m">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="Qpb-Xw-Ah4"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2X-3w-i9T">
+                                    <rect key="frame" x="265" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gO9-RR-Bm1">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromTwitter:" target="-2" id="azR-xp-wYJ"/>
+                                    </connections>
+                                </button>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-zQ-hzM">
+                                    <rect key="frame" x="18" y="85" width="324" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="TWITTER PROFILE NAME" id="edO-yB-0k2">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.0" green="0.67450980390000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LrL-O2-fpX">
+                                    <rect key="frame" x="110" y="151" width="141" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TWITTER PROFILE" id="M9m-sJ-001">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.0" green="0.67450980390000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="2050" y="707"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="q8S-wB-p1c" userLabel="LinkedinWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="360" height="198"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="afH-Dm-Eps">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="wHq-92-QTP">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                        <view key="contentView" ambiguous="YES" id="Ce0-h4-dIy">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUh-Et-hFm">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Rs9-GK-ORf">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="aGt-6g-z41"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zh7-Kb-gMg">
+                                    <rect key="frame" x="265" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VNu-8O-B5G">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromLinkedin:" target="-2" id="982-Bu-4az"/>
+                                    </connections>
+                                </button>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N41-dB-IUk">
+                                    <rect key="frame" x="18" y="85" width="324" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="LINKEDIN PROFILE NAME" id="tly-Ez-JfW">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.45882352939999999" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZP-n7-Q48">
+                                    <rect key="frame" x="106" y="151" width="149" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="LINKEDIN PROFILE" id="quf-jh-5au">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.45882352939999999" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="2507" y="399"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="kax-bV-IEB" userLabel="PhoneCallWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="360" height="198"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="QNf-Ye-gC3">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="CJP-Uh-IsW">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                        <view key="contentView" ambiguous="YES" id="ICq-h2-BKH">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-ho-uIH">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Is6-yZ-qcy">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="ldh-Rc-yDo"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qiB-2D-BQT">
+                                    <rect key="frame" x="265" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="JrB-Uh-ar0">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromPhoneCall:" target="-2" id="YuK-fR-prF"/>
+                                    </connections>
+                                </button>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEl-3h-Wgz">
+                                    <rect key="frame" x="18" y="85" width="324" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="PHONE NUMBER(WITH INTERNATIONAL CODE)" id="nhb-gM-mzj">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qx0-6R-Y2Y">
+                                    <rect key="frame" x="93" y="151" width="174" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MAKE A  PHONE CALL" id="RBv-8g-Gru">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="2507" y="707"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="tm5-rP-Wlo" userLabel="SendSMSWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="360" height="296"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="gTD-ng-j3f">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="296"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="DaN-5O-Qim">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="296"/>
+                        <view key="contentView" ambiguous="YES" id="CG2-0d-JVM">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="296"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pax-bt-oOi">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="17W-bk-CjB">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="mmG-zi-1Aw"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Whj-j8-j11">
+                                    <rect key="frame" x="265" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="svw-oy-NjC">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromSMS:" target="-2" id="4Bu-9d-T9w"/>
+                                    </connections>
+                                </button>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7cb-8X-iI0">
+                                    <rect key="frame" x="18" y="212" width="324" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="PHONE NUMBER(WITH INTERNATIONAL CODE)" id="zyU-JM-vyv">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.97647058819999999" green="0.41176470590000003" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKs-Bi-XRY">
+                                    <rect key="frame" x="138" y="249" width="85" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SEND SMS" id="LgW-bN-lxt">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.97647058819999999" green="0.41176470590000003" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7M-Hz-Hty">
+                                    <rect key="frame" x="18" y="70" width="324" height="134"/>
+                                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="MESSAGE" id="Fh5-1M-3tt">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.97647058819999999" green="0.41176470590000003" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="2543" y="-8"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="dW0-n2-peb" userLabel="SendEmailWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="360" height="296"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="IYP-rn-mes">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="296"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="K4T-Z2-hCp">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="296"/>
+                        <view key="contentView" ambiguous="YES" id="g1q-k2-1Z4">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="296"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1RR-Pg-Qoj">
+                                    <rect key="frame" x="18" y="212" width="324" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="RECIPIENTS" id="Iw4-MT-4NU">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.56862745100000001" green="0.23921568630000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IVb-2f-Rki">
+                                    <rect key="frame" x="130" y="249" width="101" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SEND EMAIL" id="k4y-VT-fVB">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.56862745100000001" green="0.23921568630000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wy5-qk-2Dw">
+                                    <rect key="frame" x="18" y="73" width="324" height="97"/>
+                                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="MESSAGE" id="Tcv-z9-0k9">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.56862745100000001" green="0.23921568630000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-dq-9IS">
+                                    <rect key="frame" x="18" y="175" width="324" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="SUBJECT" id="AFm-3c-Ola">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.56862745100000001" green="0.23921568630000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iaq-NR-LkE">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cF2-z3-SLt">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="iz9-BO-8yU"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4LE-zi-tBP">
+                                    <rect key="frame" x="265" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="TpS-qx-ncB">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromEmail:" target="-2" id="YVl-Bc-YDc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="2991" y="-8"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="AgT-HD-uiX" userLabel="BrowseToWebWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="360" height="198"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="teI-ho-QLv">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="KR4-Zi-40a">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                        <view key="contentView" ambiguous="YES" id="nLZ-6k-w83">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePo-nM-ht4">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="DhA-Zn-3xd">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="Z1e-HK-b0o"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KMv-En-hei">
+                                    <rect key="frame" x="265" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8ZU-8E-4Yo">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromURL:" target="-2" id="t1d-NK-68I"/>
+                                    </connections>
+                                </button>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8e-Hf-kg9">
+                                    <rect key="frame" x="94" y="151" width="172" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BROWSE TO WEBSITE" id="lns-cD-eI2">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.85882352939999995" green="0.039215686270000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZ5-cY-TeO">
+                                    <rect key="frame" x="18" y="85" width="324" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="WEBSITE ADDRESS/URL(HTTP://)" id="1k9-YI-jnp">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.85882352939999995" green="0.039215686270000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="2991" y="399"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="w7z-bA-Uu1" userLabel="LocationWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES"/>
+            <rect key="contentRect" x="136" y="189" width="403" height="282"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="eu5-Na-0hj">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="282"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="odm-iM-S65">
+                        <rect key="frame" x="0.0" y="0.0" width="403" height="282"/>
+                        <view key="contentView" ambiguous="YES" id="H5H-FM-0Ho">
+                            <rect key="frame" x="0.0" y="0.0" width="403" height="282"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A99-c3-gla">
+                                    <rect key="frame" x="101" y="235" width="201" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="LOCATION/GEOTAGGING" id="8gq-3I-SKO">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.96470588235294119" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUa-bJ-IX9">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hkF-9F-sSI">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="15" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="dDa-iF-oKk"/>
+                                    </connections>
+                                </button>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTE-ce-vDP">
+                                    <rect key="frame" x="18" y="198" width="367" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="LATITUDE" id="Bj1-H2-n7C">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.96470588235294119" green="0.14117647058823529" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHy-8o-jyn">
+                                    <rect key="frame" x="18" y="161" width="367" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="LONGITUDE" id="GPY-qE-3ek">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.96470588239999999" green="0.14117647059999999" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hac-8k-6ke">
+                                    <rect key="frame" x="18" y="74" width="367" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="STREET, CITY, STATE OR COUNTRY" id="aV9-D5-wRb">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.96470588239999999" green="0.14117647059999999" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sBG-Ge-VM3">
+                                    <rect key="frame" x="20" y="111" width="348" height="42"/>
+                                    <buttonCell key="cell" type="square" title="I DON'T KNOW LATITUDE/LONGITUDE" bezelStyle="shadowlessSquare" image="CHKLUFILL" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="C3Y-jV-V24">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doUserKnowLatLong:" target="-2" id="J9H-54-bgU"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Pi-bV-n3q">
+                                    <rect key="frame" x="308" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="AgH-Th-Lm8">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromLocation:" target="-2" id="GfX-tY-6ks"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="3012.5" y="749"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="bLa-kC-Lly" userLabel="WifiWindow">
+            <windowStyleMask key="styleMask" titled="YES" texturedBackground="YES"/>
+            <rect key="contentRect" x="136" y="189" width="403" height="282"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="lcb-Tk-ne7">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="282"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="z51-UR-qIe">
+                        <rect key="frame" x="0.0" y="0.0" width="403" height="282"/>
+                        <view key="contentView" ambiguous="YES" id="QEO-EV-iin">
+                            <rect key="frame" x="0.0" y="0.0" width="403" height="282"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Bx-lk-VWr">
+                                    <rect key="frame" x="139" y="235" width="125" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="WIFI NETWORK" id="9ax-UL-PoY">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.94901960784313721" green="0.14901960784313725" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1RH-Ub-Svp">
+                                    <rect key="frame" x="20" y="20" width="115" height="42"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="SSL-jR-rLS">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="15" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissTemplateWindow:" target="-2" id="F2u-B0-sSo"/>
+                                    </connections>
+                                </button>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zkl-ue-u1H">
+                                    <rect key="frame" x="18" y="173" width="367" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="SSID" id="VYa-yy-yvE">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.94901960784313721" green="0.14901960784313725" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gor-ha-Qx3">
+                                    <rect key="frame" x="18" y="136" width="367" height="29"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="PASSWORD" id="ghN-iC-t7P">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.94901960784313721" green="0.14901960784313725" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwW-5u-tno">
+                                    <rect key="frame" x="20" y="80" width="48" height="48"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NETWORK" id="vJb-5I-zyT"/>
+                                </imageView>
+                                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNE-8X-Zt4">
+                                    <rect key="frame" x="216" y="90" width="168" height="28"/>
+                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" placeholderString="NETWORK TYPE" drawsBackground="YES" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="lb3-5f-ZfN">
+                                        <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.14901960784313725" blue="0.074509803921568626" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <objectValues>
+                                            <string>NONE/OPEN</string>
+                                            <string>AES/TKIP</string>
+                                            <string>WEP</string>
+                                            <string>WPA/WPA2</string>
+                                        </objectValues>
+                                    </comboBoxCell>
+                                    <connections>
+                                        <action selector="checkForOpenNetwork:" target="-2" id="T5u-rX-Byr"/>
+                                    </connections>
+                                </comboBox>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxN-j5-nDO">
+                                    <rect key="frame" x="74" y="91" width="136" height="27"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="NETWORK TYPE" id="2L2-Oi-OTB">
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.14901960780000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NA-8c-OQW">
+                                    <rect key="frame" x="308" y="20" width="75" height="42"/>
+                                    <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="1lY-lr-zTK">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showWorkWindowFromWifi:" target="-2" id="nTv-xx-e7h"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="3457.5" y="-8"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="JhJ-WZ-b5A" userLabel="SaveOptionsPanel" customClass="NSPanel">
+            <windowStyleMask key="styleMask" utility="YES"/>
+            <rect key="contentRect" x="196" y="132" width="288" height="69"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="FtW-m7-4Al">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAW-64-Tf9">
+                        <rect key="frame" x="18" y="22" width="91" height="27"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="FILE TYPE : " id="PEy-yb-J9T">
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                            <color key="textColor" red="0.0" green="0.69411764710000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0A-Ay-jt5">
+                        <rect key="frame" x="115" y="19" width="156" height="31"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" placeholderString="FILE TYPE" drawsBackground="YES" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="vDs-f4-M5S">
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.69411764710000001" blue="0.34901960780000002" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <objectValues>
+                                <string>PNG</string>
+                                <string>JPEG</string>
+                                <string>TIFF</string>
+                                <string>JPEG-2000</string>
+                                <string>BMP</string>
+                            </objectValues>
+                        </comboBoxCell>
+                    </comboBox>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="3457" y="398.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="CANCEL" width="85" height="85"/>
+        <image name="CHKLUFILL" width="42" height="42"/>
+        <image name="CHKUFILL" width="42" height="42"/>
+        <image name="COLOR" width="42" height="42"/>
+        <image name="DISMISS" width="42" height="42"/>
+        <image name="EDIT" width="42" height="42"/>
+        <image name="EMAIL" width="85" height="85"/>
+        <image name="ENC" width="42" height="42"/>
+        <image name="ERROR" width="42" height="42"/>
+        <image name="EXPORT" width="42" height="42"/>
+        <image name="FB" width="85" height="85"/>
+        <image name="GEN" width="42" height="42"/>
+        <image name="GOBACK" width="42" height="42"/>
+        <image name="HGT" width="42" height="42"/>
+        <image name="LINK" width="85" height="85"/>
+        <image name="MAP" width="85" height="85"/>
+        <image name="NETWORK" width="42" height="42"/>
+        <image name="OK" width="42" height="42"/>
+        <image name="OPT" width="42" height="42"/>
+        <image name="PHONE" width="85" height="85"/>
+        <image name="RAW" width="85" height="85"/>
+        <image name="RES" width="42" height="42"/>
+        <image name="SMS" width="85" height="85"/>
+        <image name="TBAR" width="41" height="41"/>
+        <image name="TWITTER" width="85" height="85"/>
+        <image name="UNIT" width="42" height="42"/>
+        <image name="VCARD" width="85" height="85"/>
+        <image name="VEVENT" width="85" height="85"/>
+        <image name="WEB" width="85" height="85"/>
+        <image name="WIFI" width="85" height="85"/>
+        <image name="WTH" width="42" height="42"/>
+    </resources>
+</document>

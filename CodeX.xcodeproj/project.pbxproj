@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		DDC16CBE1D536BB9003C653E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16CBD1D536BB9003C653E /* AppDelegate.swift */; };
 		DDC16CC01D536BB9003C653E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CBF1D536BB9003C653E /* Assets.xcassets */; };
-		DDC16CC31D536BB9003C653E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CC11D536BB9003C653E /* MainMenu.xib */; };
+		DDC16CC31D536BB9003C653E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CC11D536BB9003C653E /* MainWindow.xib */; };
 		DDC16CCE1D536BB9003C653E /* CodeXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16CCD1D536BB9003C653E /* CodeXTests.swift */; };
 		DDC16CD91D536BB9003C653E /* CodeXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16CD81D536BB9003C653E /* CodeXUITests.swift */; };
+		DDC16CE81D53743E003C653E /* CreateNewWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16CE61D53743E003C653E /* CreateNewWindowController.swift */; };
+		DDC16CE91D53743E003C653E /* CreateNewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CE71D53743E003C653E /* CreateNewWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 		DDC16CBA1D536BB9003C653E /* CodeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC16CBD1D536BB9003C653E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC16CBF1D536BB9003C653E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DDC16CC21D536BB9003C653E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DDC16CC21D536BB9003C653E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		DDC16CC41D536BB9003C653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC16CC91D536BB9003C653E /* CodeXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC16CCD1D536BB9003C653E /* CodeXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeXTests.swift; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		DDC16CD41D536BB9003C653E /* CodeXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC16CD81D536BB9003C653E /* CodeXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeXUITests.swift; sourceTree = "<group>"; };
 		DDC16CDA1D536BB9003C653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC16CE61D53743E003C653E /* CreateNewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewWindowController.swift; sourceTree = "<group>"; };
+		DDC16CE71D53743E003C653E /* CreateNewWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateNewWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				DDC16CBD1D536BB9003C653E /* AppDelegate.swift */,
+				DDC16CE61D53743E003C653E /* CreateNewWindowController.swift */,
+				DDC16CE71D53743E003C653E /* CreateNewWindowController.xib */,
 				DDC16CBF1D536BB9003C653E /* Assets.xcassets */,
-				DDC16CC11D536BB9003C653E /* MainMenu.xib */,
+				DDC16CC11D536BB9003C653E /* MainWindow.xib */,
 				DDC16CC41D536BB9003C653E /* Info.plist */,
 			);
 			path = CodeX;
@@ -224,7 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC16CC01D536BB9003C653E /* Assets.xcassets in Resources */,
-				DDC16CC31D536BB9003C653E /* MainMenu.xib in Resources */,
+				DDC16CC31D536BB9003C653E /* MainWindow.xib in Resources */,
+				DDC16CE91D53743E003C653E /* CreateNewWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC16CE81D53743E003C653E /* CreateNewWindowController.swift in Sources */,
 				DDC16CBE1D536BB9003C653E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,12 +293,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DDC16CC11D536BB9003C653E /* MainMenu.xib */ = {
+		DDC16CC11D536BB9003C653E /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DDC16CC21D536BB9003C653E /* Base */,
 			);
-			name = MainMenu.xib;
+			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -385,6 +393,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CodeX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -397,6 +406,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CodeX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +419,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CodeXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeXTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeX.app/Contents/MacOS/CodeX";
@@ -422,6 +433,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CodeXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeXTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeX.app/Contents/MacOS/CodeX";
@@ -434,6 +446,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CodeXUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeXUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CodeX;
@@ -446,6 +459,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CodeXUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeXUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CodeX;
@@ -471,6 +485,7 @@
 				DDC16CDF1D536BB9003C653E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDC16CE01D536BB9003C653E /* Build configuration list for PBXNativeTarget "CodeXTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +494,7 @@
 				DDC16CE21D536BB9003C653E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDC16CE31D536BB9003C653E /* Build configuration list for PBXNativeTarget "CodeXUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +503,7 @@
 				DDC16CE51D536BB9003C653E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
