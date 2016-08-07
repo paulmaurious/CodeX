@@ -19,6 +19,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var createNewWindow: CreateNewWindowController!
     
+    var openAnotherWindow: OpenAnotherWindowController!
+    
+    var aboutWindow: AboutWindowController!
+    
     let btnTextStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
@@ -44,7 +48,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
         
+        NSLog("EOP")
+        
         NSApp.terminate(self)
+    }
+    
+    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+        
+        return true
     }
 
     @IBAction func showCreateOneWindow(sender: NSButton) {
@@ -57,6 +68,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func showOpenAnotherWindow(sender: NSButton) {
+        
+        self.window.orderOut(self)
+        
+        openAnotherWindow = OpenAnotherWindowController(windowNibName: "OpenAnotherWindowController")
+        
+        openAnotherWindow.showWindow(self)
+    }
+    
+    @IBAction func showAboutWindow(sender: NSMenuItem) {
+        
+        aboutWindow = AboutWindowController(windowNibName: "AboutWindow")
+        
+        aboutWindow.showWindow(self)
+        
+        aboutWindow.aboutWindow.opaque = false
+        
+        aboutWindow.aboutWindow.movableByWindowBackground = true
+        
+        aboutWindow.aboutWindow.makeKeyAndOrderFront(nil)
     }
 }
 

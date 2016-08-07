@@ -7,8 +7,11 @@
 //
 
 import Cocoa
+import MapKit
+import CoreLocation
+import CoreImage
 
-class CreateNewWindowController: NSWindowController {
+class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     //List of Windows
     @IBOutlet var createNewWindow: NSWindow!
@@ -159,6 +162,10 @@ class CreateNewWindowController: NSWindowController {
     
     var saveQRCodeImg: NSSavePanel!
     
+    let locationManager = CLLocationManager()
+    
+    let annot = MKPointAnnotation()
+
     //List of other outlets
     @IBOutlet var unitCombo: NSComboBox!
     
@@ -265,10 +272,14 @@ class CreateNewWindowController: NSWindowController {
     
     @IBOutlet var locationAddrTxt: NSTextField!
     
+    @IBOutlet var mapView: MKMapView!
+    
+    @IBOutlet var clickGestureRecognizer: NSPressGestureRecognizer!
+    
     //Wifi Outlets
     @IBOutlet var ssidTxt: NSTextField!
     
-    @IBOutlet var wifiPasswdTxt: NSTextField!
+    @IBOutlet var wifiPasswdTxt: NSSecureTextField!
     
     @IBOutlet var networkTypeCombo: NSComboBox!
     
@@ -279,6 +290,16 @@ class CreateNewWindowController: NSWindowController {
         
         NSLog("WindowLoaded")
         
+        self.locationManager.delegate = self
+        
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        self.locationManager.startUpdatingLocation()
+        
+        self.mapView.showsUserLocation = true
+        
+        self.mapView.addGestureRecognizer(self.clickGestureRecognizer)
+        
         btnTextStyle.alignment = NSTextAlignment.Center
         
         let OK: NSAttributedString = NSAttributedString(string: "OK", attributes: [ NSForegroundColorAttributeName : NSColor(red: 105/255, green: 155/255, blue: 76/255, alpha: 1.0), NSFontAttributeName: NSFont(name: "Avenir Next Demi Bold", size: 16)!, NSParagraphStyleAttributeName: btnTextStyle ])
@@ -287,7 +308,7 @@ class CreateNewWindowController: NSWindowController {
         
         let eventHasEndDateTxt: NSAttributedString = NSAttributedString(string: "EVENT HAS END DATE", attributes: [ NSForegroundColorAttributeName : NSColor(red: 154/255, green: 18/255, blue: 179/255, alpha: 1.0), NSFontAttributeName: NSFont(name: "Avenir Next Demi Bold", size: 16)!, NSParagraphStyleAttributeName: btnTextStyle ])
         
-        let dontKnowLatLongTxt: NSAttributedString = NSAttributedString(string: "I DON'T KNOW LATITUDE/LONGITUDE", attributes: [ NSForegroundColorAttributeName : NSColor(red: 246/255, green: 36/255, blue: 89/255, alpha: 1.0), NSFontAttributeName: NSFont(name: "Avenir Next Demi Bold", size: 16)!, NSParagraphStyleAttributeName: btnTextStyle ])
+        let dontKnowLatLongTxt: NSAttributedString = NSAttributedString(string: "I CANNOT FIND MY LOCATION USING MAP", attributes: [ NSForegroundColorAttributeName : NSColor(red: 246/255, green: 36/255, blue: 89/255, alpha: 1.0), NSFontAttributeName: NSFont(name: "Avenir Next Demi Bold", size: 15)!, NSParagraphStyleAttributeName: btnTextStyle ])
         
         generateBtn.attributedTitle = NSAttributedString(string: "GENERATE QR CODE", attributes: [ NSForegroundColorAttributeName : NSColor(red: 38/255, green: 194/255.0, blue: 129/255, alpha: 1.0), NSFontAttributeName: NSFont(name: "Avenir Next Demi Bold", size: 16)!, NSParagraphStyleAttributeName: btnTextStyle ])
         
@@ -585,7 +606,7 @@ class CreateNewWindowController: NSWindowController {
         else {
             
             self.createNewWindow.endSheet(currentTemplate)
-            self.createNewWindow.beginSheet(createNewWindow) { (response: NSModalResponse) in
+            self.createNewWindow.beginSheet(self.templateWindow) { (response: NSModalResponse) in
                 
             }
         }
@@ -770,7 +791,7 @@ class CreateNewWindowController: NSWindowController {
         }
         else {
             
-            self.qrDataContent = "http://maps.google.com/maps?q=\(self.locationAddrTxt.stringValue)"
+            self.qrDataContent = "http://maps.google.com/maps?q=\(self.locationAddrTxt.stringValue.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil))"
             
             if self.locationAddrTxt.stringValue != "" {
                 
@@ -811,7 +832,18 @@ class CreateNewWindowController: NSWindowController {
     
     @IBAction func showWorkWindowFromWifi(sender: NSButton) {
         
-        self.qrDataContent = "WIFI:S:\(self.ssidTxt.stringValue);T:\(self.networkTypeCombo.stringValue);P:\(self.wifiPasswdTxt.stringValue);;"
+        if self.networkTypeCombo.indexOfSelectedItem == 1 {
+            
+            self.qrDataContent = "WIFI:S:\(self.ssidTxt.stringValue);T:WEP;P:\"\(self.wifiPasswdTxt.stringValue)\";;"
+        }
+        else if self.networkTypeCombo.indexOfSelectedItem == 2 {
+            
+            self.qrDataContent = "WIFI:S:\(self.ssidTxt.stringValue);T:WPA;P:\"\(self.wifiPasswdTxt.stringValue)\";;"
+        }
+        else {
+            
+            self.qrDataContent = "WIFI:S:\(self.ssidTxt.stringValue);T:nopass;P:;;"
+        }
         
         if ssidTxt.stringValue != "" && self.networkTypeCombo.stringValue != "" {
             
@@ -825,11 +857,11 @@ class CreateNewWindowController: NSWindowController {
         
         if sender.indexOfSelectedItem == 0 {
             
-            self.wifiPasswdTxt.enabled = false
+            self.wifiPasswdTxt.hidden = true
         }
         else {
             
-            self.wifiPasswdTxt.enabled = true
+            self.wifiPasswdTxt.hidden = false
         }
     }
     
@@ -1072,5 +1104,57 @@ class CreateNewWindowController: NSWindowController {
                 }
             }
         }
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [AnyObject]) {
+        
+        let location = locations.last as! CLLocation
+        
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        
+        self.mapView.setRegion(region, animated: true)
+        
+        self.locationManager.stopUpdatingLocation()
+        
+        self.latitudeTxt.stringValue = center.latitude.description
+        
+        self.longitudeTxt.stringValue = center.longitude.description
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        
+        print("Errors: " + error.localizedDescription)
+    }
+    
+    @IBAction func handleGesturePress(sender: NSPressGestureRecognizer) {
+        
+        if sender.state != NSGestureRecognizerState.Recognized {
+            
+            NSLog("Touch Not Recognized")
+
+            return
+        }
+        
+        NSLog("Touch Recognized")
+                
+        let touchPoint: CGPoint = sender.locationInView(self.mapView)
+        
+        let touchCoordinate: CLLocationCoordinate2D = self.mapView.convertPoint(touchPoint, toCoordinateFromView: self.mapView)
+        
+        let region = MKCoordinateRegion(center: touchCoordinate, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        
+        self.mapView.setRegion(region, animated: true)
+        
+        self.locationManager.stopUpdatingLocation()
+        
+        annot.coordinate = touchCoordinate
+        
+        self.mapView.addAnnotation(annot)
+        
+        self.latitudeTxt.stringValue = touchCoordinate.latitude.description
+        
+        self.longitudeTxt.stringValue = touchCoordinate.longitude.description
     }
 }

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16A270f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="OpenAnotherWindowController" customModule="CodeX" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraBtn" destination="BRp-LA-GnY" id="cLw-8x-oTt"/>
+                <outlet property="cameraViewWindow" destination="FCY-rH-Ib9" id="aX6-tT-bnV"/>
+                <outlet property="dismissOpenChoiceWindowBtn" destination="zYl-Ai-teC" id="nhG-8b-O9Q"/>
+                <outlet property="dismissWindowControllerBtn" destination="V1d-d2-NIC" id="DvT-E5-jS3"/>
+                <outlet property="dropFileCancelBtn" destination="v7R-lW-4ZN" id="F4u-ea-oiG"/>
+                <outlet property="dropFileOKBtn" destination="UfF-Ru-xlR" id="3c5-o1-VLL"/>
+                <outlet property="fileDropView" destination="OZU-bf-FD1" id="99K-TF-9bI"/>
+                <outlet property="fileDropViewObj" destination="hWe-CL-WAl" id="kdD-Mq-IGI"/>
+                <outlet property="fileDropWindow" destination="U5q-6j-WhY" id="bUO-pZ-Yfk"/>
+                <outlet property="fileStatusImageView" destination="aRw-lL-cQI" id="jXd-5i-1N1"/>
+                <outlet property="goBackBtn" destination="Irx-Sh-L0k" id="nFQ-CN-1Cz"/>
+                <outlet property="openAnotherWindow" destination="F0z-JX-Cv5" id="c1V-gI-Cxz"/>
+                <outlet property="openChoiceWindow" destination="1IZ-nO-FXy" id="g8Q-mD-U09"/>
+                <outlet property="pictureBtn" destination="B0n-vW-j9x" id="PTH-z0-vxg"/>
+                <outlet property="qrCodeImageView" destination="VgH-Sz-Jr1" id="Fbn-nN-gkc"/>
+                <outlet property="scanQRCodeBtn" destination="L9l-Ec-Uzp" id="kV5-gP-IGP"/>
+                <outlet property="scannedQRCodeMessage" destination="aoq-p7-S9h" id="zbC-OK-Kbk"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="F0z-JX-Cv5" userLabel="OpenAnotherWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES"/>
+            <rect key="contentRect" x="196" y="240" width="512" height="612"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="512" height="612"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8dm-mW-uz5">
+                        <rect key="frame" x="236" y="571" width="41" height="41"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="TBAR" id="aIA-xf-nxD"/>
+                    </imageView>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="WOS-1i-18A">
+                        <rect key="frame" x="0.0" y="0.0" width="512" height="563"/>
+                        <view key="contentView" ambiguous="YES" id="1JK-o6-NvU">
+                            <rect key="frame" x="0.0" y="0.0" width="512" height="563"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h6-OI-PIY">
+                                    <rect key="frame" x="20" y="76" width="472" height="201"/>
+                                    <clipView key="contentView" ambiguous="YES" copiesOnScroll="NO" id="jUl-kj-FNH">
+                                        <rect key="frame" x="0.0" y="0.0" width="472" height="201"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <textView ambiguous="YES" editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="aoq-p7-S9h">
+                                                <rect key="frame" x="0.0" y="0.0" width="472" height="201"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="textColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="minSize" width="472" height="201"/>
+                                                <size key="maxSize" width="472" height="10000000"/>
+                                                <attributedString key="textStorage">
+                                                    <fragment content="CLICK ON SCAN QR CODE BUTTON">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AvenirNext-DemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <size key="minSize" width="472" height="201"/>
+                                                <size key="maxSize" width="472" height="10000000"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </clipView>
+                                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="lMP-ey-wJK">
+                                        <rect key="frame" x="0.0" y="-16" width="0.0" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Pd2-2e-lTG">
+                                        <rect key="frame" x="-16" y="0.0" width="16" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                </scrollView>
+                                <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jR-f3-PGA">
+                                    <rect key="frame" x="127" y="285" width="258" height="258"/>
+                                    <clipView key="contentView" ambiguous="YES" copiesOnScroll="NO" id="eU4-fI-Cwk">
+                                        <rect key="frame" x="1" y="1" width="256" height="256"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-Sz-Jr1">
+                                                <rect key="frame" x="0.0" y="162" width="256" height="256"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Xva-2w-Wu3"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </clipView>
+                                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Xz6-Mu-J9A">
+                                        <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="AVK-KE-0GK">
+                                        <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </scroller>
+                                </scrollView>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1d-d2-NIC">
+                                    <rect key="frame" x="368" y="20" width="124" height="48"/>
+                                    <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="g0L-hA-VXP">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="dismissWindowController:" target="-2" id="N3v-wn-J7I"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Irx-Sh-L0k">
+                                    <rect key="frame" x="20" y="20" width="134" height="48"/>
+                                    <buttonCell key="cell" type="square" title="GO BACK" bezelStyle="shadowlessSquare" image="GOBACK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0Df-Zb-Izw">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="goBackOpenChoiceWindow:" target="-2" id="dzC-4L-FC3"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9l-Ec-Uzp">
+                                    <rect key="frame" x="166" y="20" width="180" height="48"/>
+                                    <buttonCell key="cell" type="square" title="SCAN QR CODE" bezelStyle="shadowlessSquare" image="READ" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="RJL-Bc-KPw">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="scanQRCode:" target="-2" id="Tfo-LG-8ub"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </box>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="185"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="1IZ-nO-FXy" userLabel="OpenChoiceWindow">
+            <windowStyleMask key="styleMask" texturedBackground="YES"/>
+            <rect key="contentRect" x="136" y="189" width="480" height="325"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="E4i-hj-FBk">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="325"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQ1-UX-hWO">
+                        <rect key="frame" x="102" y="279" width="276" height="26"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="I WOULD LIKE TO SCAN QR CODE FROM" id="sGQ-q7-PXs">
+                            <font key="font" size="14" name="AvenirNext-DemiBold"/>
+                            <color key="textColor" red="0.83137254900000002" green="0.27058823529999998" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRp-LA-GnY">
+                        <rect key="frame" x="43" y="61" width="170" height="200"/>
+                        <buttonCell key="cell" type="square" title="CAMERA" bezelStyle="shadowlessSquare" image="CAMERA" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qXz-eL-p9O">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="scanFromCamera:" target="-2" id="Yyt-MI-suI"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B0n-vW-j9x">
+                        <rect key="frame" x="269" y="61" width="170" height="200"/>
+                        <buttonCell key="cell" type="square" title="PICTURE" bezelStyle="shadowlessSquare" image="PIC" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="dJX-ZL-BPk">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="scanFromPicture:" target="-2" id="4sh-F0-n93"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYl-Ai-teC">
+                        <rect key="frame" x="180" y="20" width="120" height="42"/>
+                        <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Axt-sB-dH0">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="dismissOpenChoiceWindow:" target="-2" id="ONX-df-1gO"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="736" y="183.5"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="U5q-6j-WhY" userLabel="FileDropWindow">
+            <windowStyleMask key="styleMask" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="480" height="325"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="L5m-Do-RTy">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="325"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" transparent="YES" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="p78-dj-lWQ">
+                        <rect key="frame" x="20" y="76" width="440" height="194"/>
+                        <view key="contentView" ambiguous="YES" id="6m0-Mn-4mf">
+                            <rect key="frame" x="0.0" y="0.0" width="440" height="194"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRw-lL-cQI">
+                                    <rect key="frame" x="137" y="10" width="170" height="170"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="DROP" id="QXv-lv-ui5"/>
+                                </imageView>
+                                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZU-bf-FD1" customClass="FileDropView" customModule="CodeX" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="10" width="404" height="170"/>
+                                </customView>
+                            </subviews>
+                        </view>
+                        <color key="borderColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6is-fr-GxM">
+                        <rect key="frame" x="18" y="278" width="444" height="27"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="DRAG AND DROP YOUR QR CODE IMAGE FILES BELOW" id="PNZ-su-FhN">
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                            <color key="textColor" red="0.090196078430000007" green="0.71764705880000002" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7R-lW-4ZN">
+                        <rect key="frame" x="20" y="20" width="129" height="48"/>
+                        <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="oxe-oK-X3q">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="dismissFileDropView:" target="-2" id="ddw-7g-AsW"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfF-Ru-xlR">
+                        <rect key="frame" x="385" y="20" width="75" height="42"/>
+                        <buttonCell key="cell" type="square" title="OK" bezelStyle="shadowlessSquare" image="OK" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Eoj-1E-v2k">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeFileDropWindow:" target="-2" id="EVw-hj-Tne"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="1304" y="183.5"/>
+        </window>
+        <customObject id="hWe-CL-WAl" customClass="FileDropView" customModule="CodeX" customModuleProvider="target"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="FCY-rH-Ib9" userLabel="CameraViewWindow">
+            <windowStyleMask key="styleMask" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="136" y="189" width="480" height="423"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="WIr-wP-CR9">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="423"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="785-ea-eKD">
+                        <rect key="frame" x="20" y="70" width="440" height="274"/>
+                    </customView>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8CK-wj-NdX">
+                        <rect key="frame" x="309" y="14" width="150" height="48"/>
+                        <buttonCell key="cell" type="square" title="CAPTURE IT" bezelStyle="shadowlessSquare" image="CAPTURE" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="drp-1T-dit">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="captureImageFromImage:" target="1T5-aZ-fjv" id="Hlu-qq-W6H"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-He-9Kn">
+                        <rect key="frame" x="20" y="14" width="120" height="48"/>
+                        <buttonCell key="cell" type="square" title="CANCEL" bezelStyle="shadowlessSquare" image="DISMISS" imagePosition="left" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rak-13-Rqc">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="stopPreviewingAndDismiss:" target="1T5-aZ-fjv" id="gDW-8I-a54"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hb7-ET-dZO">
+                        <rect key="frame" x="18" y="352" width="444" height="51"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="MAKE SURE YOUR ROOM IS BRIGHTLY LIT AND QRCODE IMAGE IS SIGNIFICANTLY VISIBLE TO GET BEST RESULTS" id="uZZ-7C-XhQ">
+                            <font key="font" size="15" name="AvenirNext-DemiBold"/>
+                            <color key="textColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="1894" y="184.5"/>
+        </window>
+        <viewController id="1T5-aZ-fjv" customClass="CameraViewController" customModule="CodeX" customModuleProvider="target">
+            <connections>
+                <outlet property="capturePreviewBtn" destination="8CK-wj-NdX" id="bLR-g7-bzt"/>
+                <outlet property="stopPreviewBtn" destination="hvZ-He-9Kn" id="efS-Co-SwQ"/>
+                <outlet property="view" destination="785-ea-eKD" id="AF5-OZ-HfE"/>
+            </connections>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="CAMERA" width="170" height="170"/>
+        <image name="CAPTURE" width="42" height="42"/>
+        <image name="DISMISS" width="42" height="42"/>
+        <image name="DROP" width="170" height="170"/>
+        <image name="GOBACK" width="42" height="42"/>
+        <image name="OK" width="42" height="42"/>
+        <image name="PIC" width="170" height="170"/>
+        <image name="READ" width="42" height="42"/>
+        <image name="TBAR" width="41" height="41"/>
+    </resources>
+</document>

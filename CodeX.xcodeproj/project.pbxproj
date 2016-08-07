@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD737B761D5701AB0024A7FB /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD737B751D5701AB0024A7FB /* AboutWindow.xib */; };
+		DD737B781D57047F0024A7FB /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD737B771D57047F0024A7FB /* AboutWindowController.swift */; };
+		DD77B2A41D56E91A00602D75 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77B2A31D56E91A00602D75 /* Preview.swift */; };
+		DD77B2A61D56E93500602D75 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77B2A51D56E93500602D75 /* CameraViewController.swift */; };
 		DDC16CBE1D536BB9003C653E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16CBD1D536BB9003C653E /* AppDelegate.swift */; };
 		DDC16CC01D536BB9003C653E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CBF1D536BB9003C653E /* Assets.xcassets */; };
 		DDC16CC31D536BB9003C653E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CC11D536BB9003C653E /* MainWindow.xib */; };
@@ -14,6 +18,12 @@
 		DDC16CD91D536BB9003C653E /* CodeXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16CD81D536BB9003C653E /* CodeXUITests.swift */; };
 		DDC16CE81D53743E003C653E /* CreateNewWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16CE61D53743E003C653E /* CreateNewWindowController.swift */; };
 		DDC16CE91D53743E003C653E /* CreateNewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CE71D53743E003C653E /* CreateNewWindowController.xib */; };
+		DDE5C2401D55EF0100E2CCCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE5C23F1D55EF0100E2CCCC /* MapKit.framework */; };
+		DDE5C2421D560B2800E2CCCC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE5C2411D560B2700E2CCCC /* CoreImage.framework */; };
+		DDE5C2471D561CD500E2CCCC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE5C2461D561CD500E2CCCC /* AVFoundation.framework */; };
+		DDE5C24A1D561D6D00E2CCCC /* OpenAnotherWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE5C2481D561D6D00E2CCCC /* OpenAnotherWindowController.swift */; };
+		DDE5C24B1D561D6D00E2CCCC /* OpenAnotherWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE5C2491D561D6D00E2CCCC /* OpenAnotherWindowController.xib */; };
+		DDE5C24D1D5633E200E2CCCC /* FileDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE5C24C1D5633E200E2CCCC /* FileDropView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD737B751D5701AB0024A7FB /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		DD737B771D57047F0024A7FB /* AboutWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		DD77B2A31D56E91A00602D75 /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		DD77B2A51D56E93500602D75 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		DDC16CBA1D536BB9003C653E /* CodeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC16CBD1D536BB9003C653E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC16CBF1D536BB9003C653E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +61,12 @@
 		DDC16CDA1D536BB9003C653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC16CE61D53743E003C653E /* CreateNewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewWindowController.swift; sourceTree = "<group>"; };
 		DDC16CE71D53743E003C653E /* CreateNewWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateNewWindowController.xib; sourceTree = "<group>"; };
+		DDE5C23F1D55EF0100E2CCCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DDE5C2411D560B2700E2CCCC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		DDE5C2461D561CD500E2CCCC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DDE5C2481D561D6D00E2CCCC /* OpenAnotherWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAnotherWindowController.swift; sourceTree = "<group>"; };
+		DDE5C2491D561D6D00E2CCCC /* OpenAnotherWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenAnotherWindowController.xib; sourceTree = "<group>"; };
+		DDE5C24C1D5633E200E2CCCC /* FileDropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDropView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE5C2471D561CD500E2CCCC /* AVFoundation.framework in Frameworks */,
+				DDE5C2421D560B2800E2CCCC /* CoreImage.framework in Frameworks */,
+				DDE5C2401D55EF0100E2CCCC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +100,9 @@
 		DDC16CB11D536BB9003C653E = {
 			isa = PBXGroup;
 			children = (
+				DDE5C2461D561CD500E2CCCC /* AVFoundation.framework */,
+				DDE5C2411D560B2700E2CCCC /* CoreImage.framework */,
+				DDE5C23F1D55EF0100E2CCCC /* MapKit.framework */,
 				DDC16CBC1D536BB9003C653E /* CodeX */,
 				DDC16CCC1D536BB9003C653E /* CodeXTests */,
 				DDC16CD71D536BB9003C653E /* CodeXUITests */,
@@ -103,6 +129,13 @@
 				DDC16CBF1D536BB9003C653E /* Assets.xcassets */,
 				DDC16CC11D536BB9003C653E /* MainWindow.xib */,
 				DDC16CC41D536BB9003C653E /* Info.plist */,
+				DDE5C2481D561D6D00E2CCCC /* OpenAnotherWindowController.swift */,
+				DDE5C2491D561D6D00E2CCCC /* OpenAnotherWindowController.xib */,
+				DDE5C24C1D5633E200E2CCCC /* FileDropView.swift */,
+				DD77B2A31D56E91A00602D75 /* Preview.swift */,
+				DD77B2A51D56E93500602D75 /* CameraViewController.swift */,
+				DD737B751D5701AB0024A7FB /* AboutWindow.xib */,
+				DD737B771D57047F0024A7FB /* AboutWindowController.swift */,
 			);
 			path = CodeX;
 			sourceTree = "<group>";
@@ -231,7 +264,9 @@
 			files = (
 				DDC16CC01D536BB9003C653E /* Assets.xcassets in Resources */,
 				DDC16CC31D536BB9003C653E /* MainWindow.xib in Resources */,
+				DD737B761D5701AB0024A7FB /* AboutWindow.xib in Resources */,
 				DDC16CE91D53743E003C653E /* CreateNewWindowController.xib in Resources */,
+				DDE5C24B1D561D6D00E2CCCC /* OpenAnotherWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC16CE81D53743E003C653E /* CreateNewWindowController.swift in Sources */,
+				DDE5C24D1D5633E200E2CCCC /* FileDropView.swift in Sources */,
+				DD77B2A41D56E91A00602D75 /* Preview.swift in Sources */,
+				DDE5C24A1D561D6D00E2CCCC /* OpenAnotherWindowController.swift in Sources */,
 				DDC16CBE1D536BB9003C653E /* AppDelegate.swift in Sources */,
+				DD77B2A61D56E93500602D75 /* CameraViewController.swift in Sources */,
+				DD737B781D57047F0024A7FB /* AboutWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
