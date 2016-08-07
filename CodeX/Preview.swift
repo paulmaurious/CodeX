@@ -20,10 +20,8 @@ class Preview: NSView {
         CGContextSetRGBFillColor(context, 0.0, 0.0, 0.0, 0.5)
         
         CGContextFillRect(context, NSRectToCGRect(dirtyRect))
-        
-        self.layer?.cornerRadius = 12
-        
-        self.layer?.borderColor = NSColor(red: 231/255, green: 76/255, blue: 60/255, alpha: 1.0).CGColor
+                
+        self.layer?.borderColor = NSColor.whiteColor().CGColor
         
         self.layer?.borderWidth = 3
     }
