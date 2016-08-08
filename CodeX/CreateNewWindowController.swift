@@ -164,7 +164,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
     
     var saveQRCodeImg: NSSavePanel!
     
-    let locationManager = CLLocationManager()
+    var locationManager: CLLocationManager!
     
     let annot = MKPointAnnotation()
 
@@ -289,6 +289,8 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         super.windowDidLoad()
 
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        
+        self.locationManager = CLLocationManager()
         
         //NSLog("WindowLoaded")
         

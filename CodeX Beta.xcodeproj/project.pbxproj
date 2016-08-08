@@ -71,6 +71,7 @@
 		DDE5C2481D561D6D00E2CCCC /* OpenAnotherWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAnotherWindowController.swift; sourceTree = "<group>"; };
 		DDE5C2491D561D6D00E2CCCC /* OpenAnotherWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenAnotherWindowController.xib; sourceTree = "<group>"; };
 		DDE5C24C1D5633E200E2CCCC /* FileDropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDropView.swift; sourceTree = "<group>"; };
+		DDE7611F1D5862BD004499AD /* Coimbatore.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Coimbatore.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 		DDC16CB11D536BB9003C653E = {
 			isa = PBXGroup;
 			children = (
+				DDE7611F1D5862BD004499AD /* Coimbatore.gpx */,
 				DD95CF641D5827C70072C112 /* Fabric.framework */,
 				DD95CF651D5827C70072C112 /* Crashlytics.framework */,
 				DDE5C2461D561CD500E2CCCC /* AVFoundation.framework */,
