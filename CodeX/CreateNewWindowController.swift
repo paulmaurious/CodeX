@@ -10,6 +10,8 @@ import Cocoa
 import MapKit
 import CoreLocation
 import CoreImage
+import Fabric
+import Crashlytics
 
 class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocationManagerDelegate {
     
@@ -288,7 +290,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
 
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
         
-        NSLog("WindowLoaded")
+        //NSLog("WindowLoaded")
         
         self.locationManager.delegate = self
         
@@ -618,7 +620,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if self.qrDataContent != "" {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(rawDataWindow)
             self.currentTemplate = rawDataWindow
         }
@@ -628,15 +630,15 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         let bDateFormatter: NSDateFormatter = NSDateFormatter()
         
-        bDateFormatter.dateFormat = "yyyyMMdd"
+        bDateFormatter.dateFormat = "dd-MM-yyyy"
         
         let dateString: String = bDateFormatter.stringFromDate(self.birthdayTxt.dateValue)
         
-        self.qrDataContent = "BEGIN:VCARD\nVERSION:3.0\nN:\(self.lnameTxt.stringValue);\(self.fnameTxt.stringValue);;;\nFN:\(self.fnameTxt.stringValue) \(self.lnameTxt.stringValue)\nORG:\(self.orgTxt.stringValue)\nTITLE:\(self.jobTitleTxt.stringValue)\nADR:;;\(self.streetTxt.stringValue);\(self.cityTxt.stringValue);\(self.stateTxt.stringValue);\(self.postalCodeTxt.stringValue);\(self.countryTxt.stringValue)\nTEL;WORK;VOICE:\(self.homePhoneTxt.stringValue)\nTEL;CELL:\(self.mobileTxt.stringValue)\nTEL;FAX:\(self.faxTxt.stringValue)\nEMAIL;WORK;INTERNET:\(self.emailTxt.stringValue)\nURL:\(self.urlTxt.stringValue)\nBDAY:\(dateString)\nEND:VCARD"
+        self.qrDataContent = "BEGIN:VCARD\nVERSION:3.0\nN:\(self.lnameTxt.stringValue);\(self.fnameTxt.stringValue)\nFN:\(self.fnameTxt.stringValue) \(self.lnameTxt.stringValue)\nORG:\(self.orgTxt.stringValue)\nTITLE:\(self.jobTitleTxt.stringValue)\nADR:;;\(self.streetTxt.stringValue);\(self.cityTxt.stringValue);\(self.stateTxt.stringValue);\(self.postalCodeTxt.stringValue);\(self.countryTxt.stringValue)\nTEL;WORK;VOICE:\(self.homePhoneTxt.stringValue)\nTEL;CELL:\(self.mobileTxt.stringValue)\nTEL;FAX:\(self.faxTxt.stringValue)\nEMAIL;WORK;INTERNET:\(self.emailTxt.stringValue)\nURL:\(self.urlTxt.stringValue)\nBDAY:\(dateString)\nEND:VCARD"
         
         if self.qrDataContent != "" {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(vCardWindow)
             self.currentTemplate = self.vCardWindow
         }
@@ -663,7 +665,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if self.qrDataContent != "" && self.eventNameTxt.stringValue != "" {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(vEventWindow)
             self.currentTemplate = self.vEventWindow
         }
@@ -699,7 +701,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if(self.fbProfileName.stringValue != "") {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(fbWindow)
             self.currentTemplate = self.fbWindow
         }
@@ -711,7 +713,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if(self.twitterProfileName.stringValue != "") {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(twitterWindow)
             self.currentTemplate = self.twitterWindow
         }
@@ -723,7 +725,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if self.recipientNumber.stringValue != "" {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(smsWindow)
             self.currentTemplate = self.smsWindow
         }
@@ -735,7 +737,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if(self.linkedinProfileName.stringValue != "") {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(linkedinWindow)
             self.currentTemplate = self.linkedinWindow
         }
@@ -747,7 +749,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if self.callerNumber.stringValue != "" {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(phoneCallWindow)
             self.currentTemplate = self.phoneCallWindow
         }
@@ -759,7 +761,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if self.recipientEmail.stringValue != "" {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(sendEmailWindow)
             self.currentTemplate = self.sendEmailWindow
         }
@@ -770,7 +772,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         self.qrDataContent = self.webAddress.stringValue
         if self.qrDataContent != "" {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(urlWindow)
             self.currentTemplate = self.urlWindow
         }
@@ -784,7 +786,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
             
             if self.latitudeTxt.stringValue != "" && longitudeTxt.stringValue != "" {
                 
-                NSLog(self.qrDataContent)
+                //NSLog(self.qrDataContent)
                 self.createNewWindow.endSheet(locationWindow)
                 self.currentTemplate = self.locationWindow
             }
@@ -795,7 +797,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
             
             if self.locationAddrTxt.stringValue != "" {
                 
-                NSLog(self.qrDataContent)
+                //NSLog(self.qrDataContent)
                 self.createNewWindow.endSheet(locationWindow)
                 self.currentTemplate = self.locationWindow
             }
@@ -847,7 +849,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         if ssidTxt.stringValue != "" && self.networkTypeCombo.stringValue != "" {
             
-            NSLog(self.qrDataContent)
+            //NSLog(self.qrDataContent)
             self.createNewWindow.endSheet(wifiWindow)
             self.currentTemplate = self.wifiWindow
         }
@@ -1126,6 +1128,10 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         
         print("Errors: " + error.localizedDescription)
+        
+        Crashlytics.sharedInstance().recordError(error)
+        
+        Crashlytics.sharedInstance().throwException()
     }
     
     @IBAction func handleGesturePress(sender: NSPressGestureRecognizer) {

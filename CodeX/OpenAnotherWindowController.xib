@@ -6,7 +6,7 @@
         <capability name="box content view" minToolsVersion="7.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="OpenAnotherWindowController" customModule="CodeX" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="OpenAnotherWindowController" customModule="CodeX_Beta" customModuleProvider="target">
             <connections>
                 <outlet property="cameraBtn" destination="BRp-LA-GnY" id="cLw-8x-oTt"/>
                 <outlet property="cameraViewWindow" destination="FCY-rH-Ib9" id="aX6-tT-bnV"/>
@@ -138,6 +138,10 @@
                                         <action selector="scanQRCode:" target="-2" id="Tfo-LG-8ub"/>
                                     </connections>
                                 </button>
+                                <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebf-1s-QVx">
+                                    <rect key="frame" x="20" y="495" width="48" height="48"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="Beta03" id="nsi-Ww-DyK"/>
+                                </imageView>
                             </subviews>
                         </view>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
@@ -219,7 +223,7 @@
                                     <rect key="frame" x="137" y="10" width="170" height="170"/>
                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="DROP" id="QXv-lv-ui5"/>
                                 </imageView>
-                                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZU-bf-FD1" customClass="FileDropView" customModule="CodeX" customModuleProvider="target">
+                                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZU-bf-FD1" customClass="FileDropView" customModule="CodeX_Beta" customModuleProvider="target">
                                     <rect key="frame" x="20" y="10" width="404" height="170"/>
                                 </customView>
                             </subviews>
@@ -259,7 +263,7 @@
             </view>
             <point key="canvasLocation" x="1304" y="183.5"/>
         </window>
-        <customObject id="hWe-CL-WAl" customClass="FileDropView" customModule="CodeX" customModuleProvider="target"/>
+        <customObject id="hWe-CL-WAl" customClass="FileDropView" customModule="CodeX_Beta" customModuleProvider="target"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="FCY-rH-Ib9" userLabel="CameraViewWindow">
             <windowStyleMask key="styleMask" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -304,7 +308,7 @@
             </view>
             <point key="canvasLocation" x="1894" y="184.5"/>
         </window>
-        <viewController id="1T5-aZ-fjv" customClass="CameraViewController" customModule="CodeX" customModuleProvider="target">
+        <viewController id="1T5-aZ-fjv" customClass="CameraViewController" customModule="CodeX_Beta" customModuleProvider="target">
             <connections>
                 <outlet property="capturePreviewBtn" destination="8CK-wj-NdX" id="bLR-g7-bzt"/>
                 <outlet property="stopPreviewBtn" destination="hvZ-He-9Kn" id="efS-Co-SwQ"/>
@@ -313,6 +317,7 @@
         </viewController>
     </objects>
     <resources>
+        <image name="Beta03" width="48" height="48"/>
         <image name="CAMERA" width="170" height="170"/>
         <image name="CAPTURE" width="42" height="42"/>
         <image name="DISMISS" width="42" height="42"/>

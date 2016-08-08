@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import Fabric
+import Crashlytics
 
 class Preview: NSView {
     
@@ -25,5 +27,4 @@ class Preview: NSView {
         
         self.layer?.borderWidth = 3
     }
-    
 }

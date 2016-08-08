@@ -7,7 +7,7 @@
         <capability name="box content view" minToolsVersion="7.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="CreateNewWindowController" customModule="CodeX" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="CreateNewWindowController" customModule="CodeX_Beta" customModuleProvider="target">
             <connections>
                 <outlet property="bgColorWell" destination="tcA-S9-x3L" id="a1m-2u-u3g"/>
                 <outlet property="birthdayTxt" destination="51g-5n-NMq" id="3FJ-2B-tOm"/>
@@ -433,6 +433,10 @@
                                         <action selector="generateQRCodeImage:" target="-2" id="uuL-AS-Tfp"/>
                                     </connections>
                                 </button>
+                                <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lIl-S4-Y59">
+                                    <rect key="frame" x="20" y="603" width="48" height="48"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="Beta02" id="fxG-vp-5dc"/>
+                                </imageView>
                             </subviews>
                         </view>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
@@ -1653,6 +1657,7 @@
         </window>
     </objects>
     <resources>
+        <image name="Beta02" width="48" height="48"/>
         <image name="CANCEL" width="85" height="85"/>
         <image name="CHKLUFILL" width="42" height="42"/>
         <image name="CHKUFILL" width="42" height="42"/>

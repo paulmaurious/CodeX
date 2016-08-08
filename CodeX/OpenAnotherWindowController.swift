@@ -7,7 +7,8 @@
 //
 
 import Cocoa
-
+import Fabric
+import Crashlytics
 
 class OpenAnotherWindowController: NSWindowController {
     

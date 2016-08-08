@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import Fabric
+import Crashlytics
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -27,6 +29,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        
+    NSUserDefaults.standardUserDefaults().registerDefaults(["NSApplicationCrashOnExceptions": true])
+        
+        Fabric.with([Crashlytics.self])
         
         btnTextStyle.alignment = NSTextAlignment.Center
         

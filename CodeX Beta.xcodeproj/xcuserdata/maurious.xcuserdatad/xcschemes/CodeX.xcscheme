@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDC16CB91D536BB9003C653E"
-               BuildableName = "CodeX Beta.temp_caseinsensitive_rename.app"
+               BuildableName = "CodeX Beta.app"
                BlueprintName = "CodeX Beta"
                ReferencedContainer = "container:CodeX Beta.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDC16CC81D536BB9003C653E"
-               BuildableName = "CodeX Beta.temp_caseinsensitive_rename.xctest"
+               BuildableName = "CodeX Beta.xctest"
                BlueprintName = "CodeX BetaTests"
                ReferencedContainer = "container:CodeX Beta.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDC16CD31D536BB9003C653E"
-               BuildableName = "CodeX Beta.temp_caseinsensitive_rename.xctest"
+               BuildableName = "CodeX Beta.xctest"
                BlueprintName = "CodeX BetaUITests"
                ReferencedContainer = "container:CodeX Beta.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC16CB91D536BB9003C653E"
-            BuildableName = "CodeX Beta.temp_caseinsensitive_rename.app"
+            BuildableName = "CodeX Beta.app"
             BlueprintName = "CodeX Beta"
             ReferencedContainer = "container:CodeX Beta.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC16CB91D536BB9003C653E"
-            BuildableName = "CodeX Beta.temp_caseinsensitive_rename.app"
+            BuildableName = "CodeX Beta.app"
             BlueprintName = "CodeX Beta"
             ReferencedContainer = "container:CodeX Beta.xcodeproj">
          </BuildableReference>
@@ -99,7 +99,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC16CB91D536BB9003C653E"
-            BuildableName = "CodeX Beta.temp_caseinsensitive_rename.app"
+            BuildableName = "CodeX Beta.app"
             BlueprintName = "CodeX Beta"
             ReferencedContainer = "container:CodeX Beta.xcodeproj">
          </BuildableReference>

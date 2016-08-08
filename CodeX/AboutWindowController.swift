@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import Fabric
+import Crashlytics
 
 class AboutWindowController: NSWindowController {
 
@@ -23,5 +25,4 @@ class AboutWindowController: NSWindowController {
         
         self.aboutWindow.titlebarAppearsTransparent = true
     }
-
 }

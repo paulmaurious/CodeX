@@ -11,6 +11,8 @@
 		DD737B781D57047F0024A7FB /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD737B771D57047F0024A7FB /* AboutWindowController.swift */; };
 		DD77B2A41D56E91A00602D75 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77B2A31D56E91A00602D75 /* Preview.swift */; };
 		DD77B2A61D56E93500602D75 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD77B2A51D56E93500602D75 /* CameraViewController.swift */; };
+		DD95CF661D5827C70072C112 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD95CF641D5827C70072C112 /* Fabric.framework */; };
+		DD95CF671D5827C70072C112 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD95CF651D5827C70072C112 /* Crashlytics.framework */; };
 		DDC16CBE1D536BB9003C653E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16CBD1D536BB9003C653E /* AppDelegate.swift */; };
 		DDC16CC01D536BB9003C653E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CBF1D536BB9003C653E /* Assets.xcassets */; };
 		DDC16CC31D536BB9003C653E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC16CC11D536BB9003C653E /* MainWindow.xib */; };
@@ -44,19 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2097C81D574F6600861C9D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD737B751D5701AB0024A7FB /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
 		DD737B771D57047F0024A7FB /* AboutWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
 		DD77B2A31D56E91A00602D75 /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		DD77B2A51D56E93500602D75 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		DDC16CBA1D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeX Beta.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD95CF641D5827C70072C112 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		DD95CF651D5827C70072C112 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		DDC16CBA1D536BB9003C653E /* CodeX Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeX Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC16CBD1D536BB9003C653E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC16CBF1D536BB9003C653E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC16CC21D536BB9003C653E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		DDC16CC41D536BB9003C653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDC16CC91D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeX Beta.temp_caseinsensitive_rename.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC16CC91D536BB9003C653E /* CodeX Beta.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeX Beta.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC16CCD1D536BB9003C653E /* CodeXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeXTests.swift; sourceTree = "<group>"; };
 		DDC16CCF1D536BB9003C653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDC16CD41D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeX Beta.temp_caseinsensitive_rename.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC16CD41D536BB9003C653E /* CodeX Beta.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeX Beta.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC16CD81D536BB9003C653E /* CodeXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeXUITests.swift; sourceTree = "<group>"; };
 		DDC16CDA1D536BB9003C653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC16CE61D53743E003C653E /* CreateNewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewWindowController.swift; sourceTree = "<group>"; };
@@ -75,8 +79,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDE5C2471D561CD500E2CCCC /* AVFoundation.framework in Frameworks */,
+				DD95CF671D5827C70072C112 /* Crashlytics.framework in Frameworks */,
 				DDE5C2421D560B2800E2CCCC /* CoreImage.framework in Frameworks */,
 				DDE5C2401D55EF0100E2CCCC /* MapKit.framework in Frameworks */,
+				DD95CF661D5827C70072C112 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,8 @@
 		DDC16CB11D536BB9003C653E = {
 			isa = PBXGroup;
 			children = (
+				DD95CF641D5827C70072C112 /* Fabric.framework */,
+				DD95CF651D5827C70072C112 /* Crashlytics.framework */,
 				DDE5C2461D561CD500E2CCCC /* AVFoundation.framework */,
 				DDE5C2411D560B2700E2CCCC /* CoreImage.framework */,
 				DDE5C23F1D55EF0100E2CCCC /* MapKit.framework */,
@@ -113,9 +121,9 @@
 		DDC16CBB1D536BB9003C653E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDC16CBA1D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.app */,
-				DDC16CC91D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.xctest */,
-				DDC16CD41D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.xctest */,
+				DDC16CBA1D536BB9003C653E /* CodeX Beta.app */,
+				DDC16CC91D536BB9003C653E /* CodeX Beta.xctest */,
+				DDC16CD41D536BB9003C653E /* CodeX Beta.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +136,7 @@
 				DDC16CE71D53743E003C653E /* CreateNewWindowController.xib */,
 				DDC16CBF1D536BB9003C653E /* Assets.xcassets */,
 				DDC16CC11D536BB9003C653E /* MainWindow.xib */,
-				DDC16CC41D536BB9003C653E /* Info.plist */,
+				DD2097C81D574F6600861C9D /* Info.plist */,
 				DDE5C2481D561D6D00E2CCCC /* OpenAnotherWindowController.swift */,
 				DDE5C2491D561D6D00E2CCCC /* OpenAnotherWindowController.xib */,
 				DDE5C24C1D5633E200E2CCCC /* FileDropView.swift */,
@@ -176,7 +184,7 @@
 			);
 			name = "CodeX Beta";
 			productName = CodeX;
-			productReference = DDC16CBA1D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.app */;
+			productReference = DDC16CBA1D536BB9003C653E /* CodeX Beta.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DDC16CC81D536BB9003C653E /* CodeX BetaTests */ = {
@@ -194,7 +202,7 @@
 			);
 			name = "CodeX BetaTests";
 			productName = CodeXTests;
-			productReference = DDC16CC91D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.xctest */;
+			productReference = DDC16CC91D536BB9003C653E /* CodeX Beta.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DDC16CD31D536BB9003C653E /* CodeX BetaUITests */ = {
@@ -212,7 +220,7 @@
 			);
 			name = "CodeX BetaUITests";
 			productName = CodeXUITests;
-			productReference = DDC16CD41D536BB9003C653E /* CodeX Beta.temp_caseinsensitive_rename.xctest */;
+			productReference = DDC16CD41D536BB9003C653E /* CodeX Beta.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -299,7 +307,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FILE=\"${SRCROOT}/HockeySDK-Mac/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+			shellScript = "./Fabric.framework/run b95a628461fbbb42d0698486c0b9fb6e9b434884 4f907d1521407dbb39732fb75bc0a12312b9799aeb326f9f2ea922998fe9b9e6";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -381,7 +389,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -448,15 +456,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/**";
 				INFOPLIST_FILE = CodeX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeX;
-				PRODUCT_NAME = "CodeX Beta.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "CodeX Beta";
 			};
 			name = Debug;
 		};
@@ -465,15 +470,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/**";
 				INFOPLIST_FILE = CodeX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeX;
-				PRODUCT_NAME = "CodeX Beta.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "CodeX Beta";
 			};
 			name = Release;
 		};
@@ -486,8 +488,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeXTests;
-				PRODUCT_NAME = "CodeX Beta.temp_caseinsensitive_rename";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeX Beta.temp_caseinsensitive_rename.app/Contents/MacOS/CodeX Beta.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "CodeX Beta";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeX Beta.app/Contents/MacOS/CodeX Beta";
 			};
 			name = Debug;
 		};
@@ -500,8 +502,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeXTests;
-				PRODUCT_NAME = "CodeX Beta.temp_caseinsensitive_rename";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeX Beta.temp_caseinsensitive_rename.app/Contents/MacOS/CodeX Beta.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "CodeX Beta";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeX Beta.app/Contents/MacOS/CodeX Beta";
 			};
 			name = Release;
 		};
@@ -513,7 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeXUITests;
-				PRODUCT_NAME = "CodeX Beta.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "CodeX Beta";
 				TEST_TARGET_NAME = CodeX;
 			};
 			name = Debug;
@@ -526,7 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = org.themelios.CodeXUITests;
-				PRODUCT_NAME = "CodeX Beta.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "CodeX Beta";
 				TEST_TARGET_NAME = CodeX;
 			};
 			name = Release;

@@ -8,6 +8,8 @@
 
 import Cocoa
 import AVFoundation
+import Fabric
+import Crashlytics
 
 class CameraViewController: NSViewController {
 
