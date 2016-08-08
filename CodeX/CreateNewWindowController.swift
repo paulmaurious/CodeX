@@ -299,7 +299,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
         self.locationManager.startUpdatingLocation()
-        
+                
         self.mapView.showsUserLocation = true
         
         self.mapView.addGestureRecognizer(self.clickGestureRecognizer)

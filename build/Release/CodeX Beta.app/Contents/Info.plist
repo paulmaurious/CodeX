@@ -62,8 +62,10 @@
 	<string>10.11</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Themelios. All rights reserved.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This application requires locations services to work.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>App needs location servers to work</string>
+	<string>This application requires locations services to work.</string>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
 	<key>NSPrincipalClass</key>
