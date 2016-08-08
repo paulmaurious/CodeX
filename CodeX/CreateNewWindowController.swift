@@ -1133,7 +1133,7 @@ class CreateNewWindowController: NSWindowController, MKMapViewDelegate, CLLocati
         
         Crashlytics.sharedInstance().recordError(error)
         
-        Crashlytics.sharedInstance().throwException()
+        //Crashlytics.sharedInstance().throwException()
     }
     
     @IBAction func handleGesturePress(sender: NSPressGestureRecognizer) {
