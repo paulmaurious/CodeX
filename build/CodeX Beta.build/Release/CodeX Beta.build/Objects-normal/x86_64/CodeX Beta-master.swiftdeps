@@ -1,0 +1,11 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "8b67472054d7d49d1918def4c9aa181d"
+build_time: [524310399, 214506000]
+inputs:
+  "/Users/maurious/Documents/Xcode Projects/CodeX/CodeX/CreateNewWindowController.swift": [523959574, 0]
+  "/Users/maurious/Documents/Xcode Projects/CodeX/CodeX/FileDropView.swift": [523948469, 0]
+  "/Users/maurious/Documents/Xcode Projects/CodeX/CodeX/Preview.swift": [523948473, 0]
+  "/Users/maurious/Documents/Xcode Projects/CodeX/CodeX/OpenAnotherWindowController.swift": [523948458, 0]
+  "/Users/maurious/Documents/Xcode Projects/CodeX/CodeX/AppDelegate.swift": [523947853, 0]
+  "/Users/maurious/Documents/Xcode Projects/CodeX/CodeX/CameraViewController.swift": [523948480, 0]
+  "/Users/maurious/Documents/Xcode Projects/CodeX/CodeX/AboutWindowController.swift": [523948588, 0]
